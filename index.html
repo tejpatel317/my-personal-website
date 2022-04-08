@@ -1,12 +1,23 @@
-<!DOCTypE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="stylesheet" href="style.css" />
         <link rel="shortcut icon" href="./favicon-money.ico">
-        <title>Compound Interest Calculator</title>
+        <title>Interest Calculator</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Simple Interest Calculator</h1>
+        <p>The formula for simple interest is straightforward since it does not include the effect of compounding. In other others, the interest rate will only be applied to the principal amount.</p>
+        <p>Simple Interest = P x I x N</p>
+        <p>P = Principal amount in dollars</p>
+        <input placeholder="Enter the principal amount" id="simplePrincipal">
+        <p>I = Interest rate per year</p>
+        <input placeholder="Enter the interest rate per year" id="simpleInterest">
+        <p>N = Number of terms in years</p> 
+        <input placeholder="Enter the number of years" id="simpleTerm">
+        <button id="simplebutton">Calculate Simple Interest</button>
+        <h2 id="simpleResult"></h2>
         <script src="script.js"></script>
     </body>
 </html>
+
