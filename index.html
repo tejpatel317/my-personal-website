@@ -7,16 +7,29 @@
     </head>
     <body>
         <h1>Simple Interest Calculator</h1>
-        <p>The formula for simple interest is straightforward since it does not include the effect of compounding. In other others, the interest rate will only be applied to the principal amount.</p>
-        <p>Simple Interest = P x I x N</p>
-        <p>P = Principal amount in dollars</p>
-        <input placeholder="Enter the principal amount" id="simplePrincipal">
-        <p>I = Interest rate per year</p>
-        <input placeholder="Enter the interest rate per year" id="simpleInterest">
-        <p>N = Number of terms in years</p> 
-        <input placeholder="Enter the number of years" id="simpleTerm">
-        <button id="simplebutton">Calculate Simple Interest</button>
-        <h2 id="simpleResult"></h2>
+            <p>The formula for simple interest is straightforward since it does not include the effect of compounding. In other others, the interest rate will only be applied to the principal amount.</p>
+            <p>Total Amount = P + (P x R x T)</p>
+            <p>P = Principal amount in dollars</p>
+                <input placeholder="Enter the principal amount" id="simplePrincipal">
+            <p>R = Anual rate of interest</p>
+                <input placeholder="Enter the interest rate per year" id="simpleInterest">
+            <p>T = Number of terms in years</p> 
+                <input placeholder="Enter the number of years" id="simpleTerm">
+             <button id="simplebutton">Calculate Simple Interest</button>
+            <h2 id="simpleResult"></h2>
+        <h1>Compound Interest Calculator</h1>
+            <p>Compound interest is the interest on interest. This means that the interest is not only applied to the principal amount, but also the accumulated interest over time.</p>
+            <p>Total Amount = P(1+R/N)NT</p>
+            <p>P = Principal amount in dollars</p>
+                <input placeholder="Enter the principal amount" id="compoundPrincipal">
+            <p>R = Annual rate of interest</p>
+                <input placeholder="Enter the interest rate per year" id="compoundInterest">
+            <p>T = Number of terms in years</p> 
+                <input placeholder="Enter the number of years" id="compoundTerm">
+            <p>N = How many times interest is compounded per year</p> 
+                <input placeholder="Enter the number of years" id="compoundN">
+            <button id="compoundbutton">Calculate Compound Interest</button>
+            <h2 id="compoundResult"></h2>
         <script src="script.js"></script>
     </body>
 </html>
