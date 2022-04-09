@@ -15,15 +15,7 @@ function alertSimpleInterest() {
     }
 
 button.addEventListener("click", function (e) {
-    let testPrinciple = parseFloat(document.getElementById("simplePrincipal").value, 10);
-    let testInterest = parseFloat(document.getElementById("simpleInterest").value, 10);
-    let testTerm = parseFloat(document.getElementById("simpleTerm").value, 10);
-    if (isNaN(testPrinciple) || isNaN(testInterest) || isNaN(testTerm)) {
-        alertSimpleInterest();
-    }
-    else {
         simpleInterestCalculator();
-    }
 });
 
 
@@ -47,14 +39,5 @@ function alertCompInterest() {
 }
 
 buttonTwo.addEventListener("click", function (e) {
-    let testPrinciple = parseFloat(document.getElementById("compoundPrincipal").value, 10);
-    let testInterest = parseFloat(document.getElementById("compoundInterest").value, 10);
-    let testTerm = parseFloat(document.getElementById("compoundTerm").value, 10);
-    let testNumberOfTime = parseFloat(document.getElementById("compoundN").value, 10);
-    if (isNaN(testPrinciple) || isNaN(testInterest) || isNaN(testTerm) || isNaN(testNumberOfTime)) {
-        alertCompInterest();
-    }
-    else {
          compoundInterestCalculator();
-    }
 });
